@@ -9,6 +9,13 @@ const options = {
 	key: fs.readFileSync('server.key'),
 	cert: fs.readFileSync('server.cert')
 };
+const make_dir = (dir) => {
+	if(!fs.existsSync(dir)) {
+		fs.mkdirSync(dir);
+	}
+}
+
+make_dir('./uploads');
 
 const storage = multer.diskStorage({
 	destination : (request, file, callback) => {
