@@ -1,2 +1,2 @@
 # http-server
-jw test http server for zibox and ziphonex
+jw test http file server for zibox and ziphonex
